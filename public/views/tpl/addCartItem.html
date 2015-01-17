@@ -1,0 +1,39 @@
+<md-dialog aria-label="カスタマイズ項目" class="addCarteItemDialog">
+  <md-content class="">
+    <md-subheader class="md-sticky-no-effect">新規：カスタマイズ項目</md-subheader>
+      <div ng-hide="isReview">
+        <md-input-container>
+          <label>ID</label>
+          <input type="text" ng-model="item.name">
+        </md-input-container>
+        <md-input-container>
+          <label>タイプ</label>
+          <select ng-model="item.type" ng-options="type.name as type.text for type in types" ng-change="updateScope()"></select>
+        </md-input-container>
+        <md-input-container ng-if="item.type!='q_a'">
+          <label>タイトル</label>
+          <input type="text" ng-model="item.title" my-auto-destroy>
+        </md-input-container>
+        <md-input-container ng-if="item.type=='q_a'">
+          <label>Q</label>
+          <textarea type="text" ng-model="item.question" my-auto-destroy></textarea>
+        </md-input-container>
+        <md-input-container ng-if="item.type=='radio'||item.type=='radio_pic'||item.type=='radio_pic_text'">
+          <label>リスト</label>
+          <textarea ng-model="item.list" ng-list="&#10;" ng-trim="false" my-auto-destroy></textarea>
+        </md-input-container>
+      </div>
+      <div ng-if="isReview" ng-include="(typeTpl | filter : {name: item.type } :true)[0].url"></div>
+  </md-content>
+  <div class="md-actions" layout="row">
+     <md-button ng-click="review()" ng-if="item.type" class="md-primary md-hue-1 float_left">
+      {{isReview?"戻る":"レビュー"}}
+    </md-button>
+    <md-button ng-click="cancel()">
+      キャンセル
+    </md-button>
+    <md-button ng-click="save()" class="md-primary md-raised ">
+      保存
+    </md-button>
+  </div>
+</md-dialog>

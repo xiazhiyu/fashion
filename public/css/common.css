@@ -1,0 +1,202 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+  font-size: 11pt; }
+
+a {
+  cursor: pointer; }
+
+ul {
+  list-style: none; }
+
+md-input-container.md-default-theme select.md-input {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  background: url("../images/select_defaut.png") no-repeat;
+  background-position: right; }
+
+md-toast.md-default-theme.md-error {
+  background-color: #e24f6b;
+  margin-left: 30%; }
+
+md-toast.md-default-theme.md-success {
+  background-color: #56b866;
+  margin-left: 30%; }
+
+div#ngView {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+div.app {
+  width: 100%;
+  height: 100%; }
+
+div.topNav {
+  background: #3a3838;
+  height: 25pt;
+  width: 100%; }
+
+div.topNav i {
+  float: left;
+  line-height: 25pt;
+  margin-left: 30pt;
+  color: #eaeaea;
+  font-size: 15pt; }
+
+div.topNav ul {
+  padding: 0;
+  margin: 0 0 0 75pt;
+  height: 100%; }
+
+div.topNav ul li {
+  float: left;
+  padding: 0;
+  min-width: 74pt;
+  margin: 0;
+  text-align: center;
+  height: 100%; }
+
+div.topNav ul li a {
+  color: white;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  line-height: 25pt; }
+
+div.topNav ul li a:hover {
+  background: gray; }
+
+div.topNav ul li a.active {
+  border-bottom: 2pt solid #ffae00; }
+
+div.contentBar {
+  width: 100%;
+  background: rgba(222, 71, 79, 0.9);
+  position: fixed;
+  z-index: 1;
+  height: 40pt;
+  top: 95pt; }
+
+.contentBar h3 {
+  margin: 0 0 0 105pt;
+  font-weight: normal;
+  color: white;
+  line-height: 40pt;
+  float: left; }
+
+.contentBar i {
+  float: right;
+  line-height: 40pt;
+  font-size: 18pt;
+  color: white;
+  margin-right: 5pt; }
+
+div.content {
+  top: 25pt;
+  bottom: 0pt;
+  height: 100%;
+  position: fixed;
+  background-color: #eef0f5;
+  width: 100%; }
+
+div.leftNav {
+  width: 75pt;
+  background: #5e5f61; }
+
+div.leftNav ul {
+  margin: 0px;
+  padding: 10pt;
+  margin-top: 120pt; }
+
+div.inContent {
+  width: 100%;
+  margin-top: 110pt;
+  padding: 1px 0 0 15px; }
+
+div.inContent md-tabs {
+  /*  top: 136pt;
+    bottom: 0pt;
+    height: 100%;*/
+  /*width: 875pt;*/
+  /*position: absolute;*/ }
+
+div.inContent md-tabs.md-default-theme .md-header {
+  background: #CCCCCC;
+  height: 25pt;
+  max-width: 200pt; }
+
+div.inContent md-tabs.md-default-theme md-tab.active {
+  color: rgba(165, 66, 37, 0.85); }
+
+div.inContent md-tabs.md-default-theme md-tab {
+  color: white; }
+
+div.inContent md-tabs.md-default-theme md-tabs-ink-bar {
+  color: #CC3300;
+  background: #CC3300; }
+
+div.carteItem ul {
+  padding: 38pt 0 0 0;
+  margin: 0; }
+
+div.carteItem ul li {
+  min-height: 50pt; }
+
+.radioTitle {
+  float: left;
+  margin: 17px; }
+
+div.carteItem .md-switch-thumb, md-radio-button {
+  display: inline-block; }
+
+div.carteItem a.aInLiRight {
+  float: right;
+  display: inline-block;
+  margin: 17px;
+  color: #C35252; }
+
+div.carteItem a.fixA {
+  right: 18pt;
+  position: absolute;
+  display: inline-block;
+  margin-top: 15pt;
+  color: #33CCFF; }
+
+div.content .includeContent {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #bebebe;
+  background: white;
+  margin-right: 5pt;
+  min-height: 100pt; }
+
+.md-subheader.md-default-theme {
+  background: #99CCFF;
+  color: white;
+  z-index: 2; }
+
+md-content .md-subheader.md-default-theme {
+  margin-top: -24px;
+  margin-left: -24px;
+  margin-right: -24px; }
+
+.addCarteItemDialog {
+  min-width: 67%;
+  /*min-height: 300pt;*/ }
+
+.addCarteItemDialog md-input-container {
+  float: left;
+  width: 45%;
+  margin-right: 15pt; }
+
+.addCarteItemDialog .float_left {
+  position: absolute;
+  left: 5pt; }

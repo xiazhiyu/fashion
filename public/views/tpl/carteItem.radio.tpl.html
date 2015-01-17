@@ -1,0 +1,4 @@
+<div class="radioTitle float" style="margin: 17px;">{{item.title}}</div>
+<md-radio-group ng-model="reviewData.value" my-auto-destroy>
+  <md-radio-button ng-repeat="l in item.list" ng-value="l">{{l}}</md-radio-button>
+</md-radio-group>  

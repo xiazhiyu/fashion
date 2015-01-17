@@ -1,0 +1,22 @@
+<div class="app">
+  <div class="topNav" ng-include="'views/tpl/topNav.html'"></div>
+  <div class="contentBar">
+    <h3>カルテ</h3>
+    <i class="fa fa-bars"></i>
+  </div>
+  <div class="content" layout="row">
+     <div class="leftNav" ng-include="'views/tpl/leftNav.html'"></div>
+     <div class="inContent">
+        <md-tabs md-selected="selectedIndex">
+          <md-tab ng-repeat="tab in tabs" md-no-ink="true" md-on-select="announceSelected(tab)" md-on-deselect="announceDeselected(tab)" ng-disabled="tab.disabled" label="{{tab.title}}">
+          <div ng-include="tab.tpl" class="includeContent"></div>
+          <!--
+            <div class="tabContent" layout="column" layout-fill layout-align="space-around center">
+              
+            </div>
+          -->
+          </md-tab>
+        </md-tabs>
+     </div>
+  </div>
+</div>
